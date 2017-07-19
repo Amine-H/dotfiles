@@ -1,5 +1,4 @@
-# set aliases
-
+# git aliases
 alias ginit='git init' 
 alias giadd='git add'
 alias gicmt='git commit'
@@ -7,4 +6,6 @@ alias gipll='git pull'
 alias gipsh='git push'
 alias gists='git status'
 alias gilgg='git lgg'
+alias gichk='git checkout'
+alias gidff='git diff'
 
