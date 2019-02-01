@@ -9,3 +9,50 @@ alias gilgg='git lgg'
 alias gichk='git checkout'
 alias gidff='git diff'
 
+# zsh
+alias j='jump'
+
+# misc
+alias ytd='youtube-dl'
+alias rmr='rm -r'
+
+# mobile dev (react-native/android/ios)
+alias emu='$ANDROID_HOME/tools/emulator'
+alias rn='react-native'
+alias rnra='react-native run-android'
+alias rnri='react-native run-ios'
+
+# Docker aliases
+alias dr='docker'
+alias drun='docker run'
+alias drit='docker run -it'
+alias drrm='docker run --rm'
+
+alias dexec='docker exec'
+alias dx='docker exec'
+alias dxit='docker exec -it'
+
+alias dstart='docker start'
+alias dstrt='docker start'
+
+alias dstop='docker stop'
+alias dstp='docker stop'
+
+alias dps='docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Ports}}"'
+alias dpsv='docker ps'
+
+alias drm='docker rm'
+alias drmi='docker rmi'
+
+alias dcmps='docker-compose'
+
+# SDKman
+usejava() {
+    if [[ $@ == "8" ]]; then
+        sdk use java 8.0.163-zulu
+    elif [[ $@ == "10" ]]; then
+        sdk use java 10.0.0-zulu
+    elif [[ $@ == "11" ]]; then
+        sdk use java 11.0.1-zulu
+    fi
+}
